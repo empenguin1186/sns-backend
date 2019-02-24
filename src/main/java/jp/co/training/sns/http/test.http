@@ -1,0 +1,116 @@
+POST http://localhost:8080/tweets/submit
+Content-Type: application/json
+
+{
+  "content": "test message",
+  "tweetUser": "kodaira",
+  "attachment": "attachment",
+  "favorite": 0,
+  "retweet": 0,
+  "replyTo": 1,
+  "time": 300
+}
+
+###
+
+POST http://localhost:8080/tweets/submit
+Content-Type: application/json
+
+{
+  "content": "アイウエオかきくけこさしすせそたちつてとなにぬねのは皮膚へ保まみむめもやゆよらりるれろわをん",
+  "tweetUser": "hoge",
+  "attachment": "attachment",
+  "favorite": 0,
+  "retweet": 0,
+  "replyTo": 1,
+  "time": 300
+}
+
+###
+
+POST http://localhost:8080/tweets/1/delete
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/tweets/kodaira/myself
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/tweets?keyword=test
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/user/kodaira
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/user/post
+Content-Type: application/json
+
+{
+  "userId": "hoge",
+  "userName": "hoge",
+  "encodedPassword":"$2a$10$zFEweFHkCxWQSxOXmO.Rn.IlNeXuyHE8DxLLtPKSntbCXF3ZBLG96",
+  "comment": "hoge",
+  "place": "Tokyo",
+  "birthDay": 100000,
+  "imgUrl": "example.com"
+}
+
+###
+
+POST http://localhost:8080/user/kodaira/delete
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/user/put
+Content-Type: application/json
+
+{
+  "userId": "hoge",
+  "userName": "hoge",
+  "encodedPassword": "$2a$10$zFEweFHkCxWQSxOXmO.Rn.IlNeXuyHE8DxLLtPKSntbCXF3ZBLG96",
+  "comment": "hoge",
+  "place": "Osaka",
+  "birthDay": 100000,
+  "imgUrl": "example.com"
+}
+
+###
+
+GET http://localhost:8080/user/kodaira/details
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/tweets/kodaira/follow
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/follow/post
+Content-Type: application/json
+
+{
+  "followId": "kodaira",
+  "followerId": "hoge",
+  "blockFlag": 1,
+  "muteFlag": 0
+}
+
+###
+
+GET http://localhost:8080/follow/kodaira/follow
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/user/kodaira/credentials
+Content-Type: application/json
+
+###
