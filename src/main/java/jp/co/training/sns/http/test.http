@@ -43,7 +43,7 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:8080/user/kodaira
+GET http://localhost:8080/user/hoge
 Content-Type: application/json
 
 ###
@@ -54,7 +54,8 @@ Content-Type: application/json
 {
   "userId": "hoge",
   "userName": "hoge",
-  "encodedPassword":"$2a$10$zFEweFHkCxWQSxOXmO.Rn.IlNeXuyHE8DxLLtPKSntbCXF3ZBLG96",
+  "encodedPassword": "$2a$10$zFEweFHkCxWQSxOXmO.Rn.IlNeXuyHE8DxLLtPKSntbCXF3ZBLG96",
+  "email": "sample.yahoo.co.jp",
   "comment": "hoge",
   "place": "Tokyo",
   "birthDay": 100000,
@@ -75,6 +76,7 @@ Content-Type: application/json
   "userId": "hoge",
   "userName": "hoge",
   "encodedPassword": "$2a$10$zFEweFHkCxWQSxOXmO.Rn.IlNeXuyHE8DxLLtPKSntbCXF3ZBLG96",
+  "email": "hogehoge.yahoo.co.jp",
   "comment": "hoge",
   "place": "Osaka",
   "birthDay": 100000,

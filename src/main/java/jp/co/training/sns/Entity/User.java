@@ -14,7 +14,9 @@ public class User implements Serializable {
 	private String userName;
 
 	private String encodedPassword;
-	
+
+	private String email;
+
 	private String comment;
 	
 	private String place;

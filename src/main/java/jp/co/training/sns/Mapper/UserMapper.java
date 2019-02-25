@@ -14,18 +14,18 @@ public interface UserMapper {
 	
 	/* ユーザ情報取得 */
 	@Select("SELECT user_id AS userId, user_name AS userName, encoded_password AS encodedPassword," +
-		" comment AS comment, place AS place, birth_day AS birthDay," +
+		" email AS email, comment AS comment, place AS place, birth_day AS birthDay," +
 		" img_url AS imgUrl FROM user WHERE user_id = #{userId}")
 	User findOne(String userId);
 	
 	/* ユーザ登録 */
-	@Insert("INSERT INTO user (user_id, user_name, encoded_password, comment, place, birth_day, img_url)" +
-		" VALUES (#{userId}, #{userName}, #{comment}, #{place}, #{birthDay}, #{imgUrl})")
+	@Insert("INSERT INTO user (user_id, user_name, encoded_password, email, comment, place, birth_day, img_url)" +
+		" VALUES (#{userId}, #{userName}, #{email}, #{comment}, #{place}, #{birthDay}, #{imgUrl})")
 	boolean post(User user);
 	
 	/* ユーザ情報更新 */
-	@Update("UPDATE user SET user_name = #{userName}, encoded_password = #{encodedPassword}, comment = #{comment}," +
-		" place = #{place}, birth_day = #{birthDay}, img_url = #{imgUrl} WHERE user_id = #{userId}")
+	@Update("UPDATE user SET user_name = #{userName}, encoded_password = #{encodedPassword}, email = #{email}," +
+			" comment = #{comment}, place = #{place}, birth_day = #{birthDay}, img_url = #{imgUrl} WHERE user_id = #{userId}")
 	boolean update(User user);
 
 	/* ユーザ消去 */
