@@ -3,6 +3,7 @@ CREATE TABLE user (
     user_id VARCHAR PRIMARY KEY
     ,user_name VARCHAR NOT NULL
     ,encoded_password VARCHAR NOT NULL
+    ,email VARCHAR NOT NULL
     ,comment VARCHAR
     ,place VARCHAR
     ,birth_day INT
