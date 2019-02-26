@@ -79,7 +79,7 @@ Content-Type: application/json
   "email": "hogehoge.yahoo.co.jp",
   "comment": "hoge",
   "place": "Osaka",
-  "birthDay": 100000,
+  "birthDay": "1999-01-01",
   "imgUrl": "example.com"
 }
 

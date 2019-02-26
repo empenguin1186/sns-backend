@@ -6,7 +6,7 @@ CREATE TABLE user (
     ,email VARCHAR NOT NULL
     ,comment VARCHAR
     ,place VARCHAR
-    ,birth_day INT
+    ,birth_day DATE
     ,img_url VARCHAR
 );
 DROP TABLE tweet IF EXISTS;
