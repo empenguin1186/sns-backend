@@ -20,7 +20,7 @@ public interface UserMapper {
 	
 	/* ユーザ登録 */
 	@Insert("INSERT INTO user (user_id, user_name, encoded_password, email, comment, place, birth_day, img_url)" +
-		" VALUES (#{userId}, #{userName}, #{email}, #{comment}, #{place}, #{birthDay}, #{imgUrl})")
+		" VALUES (#{userId}, #{userName}, #{encodedPassword}, #{email}, #{comment}, #{place}, #{birthDay}, #{imgUrl})")
 	boolean post(User user);
 	
 	/* ユーザ情報更新 */

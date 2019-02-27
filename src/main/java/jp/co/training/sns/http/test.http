@@ -52,13 +52,13 @@ POST http://localhost:8080/user/post
 Content-Type: application/json
 
 {
-  "userId": "hoge",
+  "userId": "temp",
   "userName": "hoge",
   "encodedPassword": "$2a$10$zFEweFHkCxWQSxOXmO.Rn.IlNeXuyHE8DxLLtPKSntbCXF3ZBLG96",
   "email": "sample.yahoo.co.jp",
   "comment": "hoge",
   "place": "Tokyo",
-  "birthDay": 100000,
+  "birthDay": "1999-01-01",
   "imgUrl": "example.com"
 }
 
